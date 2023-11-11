@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ANIMATIONS */
+
+.Button--explore_animations {
+  @apply transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110;
+}
+.Input--search_animations {
+  @apply transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12;
+}
+.Card_animations {
+  @apply transform transition-all hover:-translate-y-4 hover:shadow-xl;
+}
+
+/* RESUING STYLES (our recomendations)*/
+
+.Card {
+  @apply w-48 h-64 shadow-md rounded-lg flex-none;
+}
+.Card--primary {
+  @apply w-full h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700;
+}
+.Card--secondary {
+  @apply w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800;
+}
+.Card--primary_title {
+  @apply text-white font-bold text-xl px-4 py-2;
+}
+.Card--primary_text {
+  @apply text-white text-xs px-4;
+}
+.Card--secondary_title {
+  @apply text-terciary font-bold text-xl px-4 py-2 dark:text-white;
+}
+.Card--secondary_text {
+  @apply text-terciary text-xs px-4 dark:text-white;
+}
+
+/* RESUING STYLES (trending stays)*/
+
+.Stay_title {
+  @apply text-3xl px-8 pt-8 pb-2 font-bold text-white;
+}
+.Stay_text {
+  @apply text-lg pl-8 text-white mr-20 leading-5;
+}
+/* REUSING STYLES (faqs) */
+
+.Question {
+  @apply text-xl font-semibold text-primary dark:text-white;
+}
+.Answer {
+  @apply text-base pt-2 leading-5 dark:text-white;
+}
+
+/* REUSING STYLES (tab_bar) */
+
+.Svg {
+  @apply fill-current text-gray-200;
+}
+
+/* LG BREAKPOINT STYLES (home) */
+
+.Lg--img {
+  @apply lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center;
+}
+
+.Lg--container--button_explore {
+  @apply lg:space-y-0 lg:items-start lg:pt-48 lg:justify-start;
+}
+
+/* LG BREAKPOINT STYLES (rentas destacadas) */
+
+.Lg--container_LaBaliMiami {
+  @apply lg:flex lg:h-full lg:w-full lg:space-x-4;
+}
+
+.Lg--container_BaliMiami {
+  @apply lg:h-full lg:w-full;
+}
